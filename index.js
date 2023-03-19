@@ -12,8 +12,8 @@ wss.on('connection', function connection(ws, request) {
 
     let code =  Math.floor(Math.random()*(999999-100000)) + 100000;
     let ip = request.connection.remoteAddress.replace('::ffff:', '');
-    console.log('ip is connected', ip)
-    console.log('ws',ws.sendData)
+    // console.log('ip is connected', ip)
+    // console.log('ws',ws.sendData)
     code2ws.set(code, ws)
     ws.on('message', function incoming(message) {
         console.log('imcoming message',message.toString())

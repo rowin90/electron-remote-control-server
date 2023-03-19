@@ -5,12 +5,15 @@
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prd-dev": "pm2 start bin/pm2-prd-dev.config.js"
   },
   "keywords": [],
   "author": "饶驹",
   "license": "ISC",
   "dependencies": {
     "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "pm2": "^5.3.0"
   }
 }
